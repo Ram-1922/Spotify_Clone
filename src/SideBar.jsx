@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 
 function SideBar() {
   return (
-    <div className='bg-[#121212] rounded-sm m-3 text-white p-5 w-90 h-[calc(100vh-10rem)]'>
+    <div className='bg-[#121212] rounded-lg m-3 mt-1 text-white p-5 w-140 h-[calc(100vh-10rem)]'>
         <div className='flex justify-between'>
             <div className='flex gap-4 items-center group transition-all'>
                 <PanelRightOpen className='translate-x-[-60px] text-[gray] hidden opacity-0  group-hover:block group-hover:translate-x-0 group-hover:opacity-100 transition-all hover:text-white transition-transform duration-500'/>

@@ -38,9 +38,9 @@ function Navbar() {
 
   return (
     <>
-      <nav ref={refClickOut} className="flex w-full bg-black text-white px-6 py-3 justify-between ">
+      <nav ref={refClickOut} className="flex w-full bg-black text-white px-6 py-3 justify-between">
         <div className="h-8 w-8 mt-2"><img src={graylogo} /></div>
-        <div className='flex items-center gap-2 -my-2'>
+        <div className='flex items-center gap-2 -my-2 ml-90'>
           <button className='bg-[#1f1f1f] hover:bg-[#2a2a2a] hover:scale-105 rounded-full w-13 h-13 pl-[13px]'>
             {/* <House size={26} className='active:fill-white'/> */}
             <svg

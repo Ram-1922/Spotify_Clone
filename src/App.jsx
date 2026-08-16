@@ -1,6 +1,8 @@
 import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './Home'
+import Songs from './Songs'
+import SongComponent from './SongComponent'
 
 function App() {
 
@@ -8,6 +10,16 @@ function App() {
     {
       path:'/',
       element: <Home/>,
+      children:[
+        {
+          index:true,
+          element:<SongComponent/>
+        },
+        {
+          path:'/songs/:id',
+          element:<Songs/>
+        }
+      ]
     }
   ])
   return (

@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import SideBar from './SideBar'
 import SongComponent from './SongComponent'
+import { Outlet } from 'react-router-dom'
 
 function Home() {
   return (
@@ -9,7 +10,7 @@ function Home() {
         <Navbar/>
         <div className='flex gap-2'>
           <SideBar/>
-          <SongComponent/>
+          <Outlet/>
         </div>
     </>
   )
